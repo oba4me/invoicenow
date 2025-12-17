@@ -1,0 +1,399 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: DejaVu Sans, Arial, sans-serif;
+    font-size: 12px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+/* HEADER */
+.invoice-header {
+    text-align: center;
+    border-bottom: 2px solid #000;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.invoice-header h1 {
+    margin: 0;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+/* META INFO */
+.invoice-meta {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.invoice-meta td {
+    vertical-align: top;
+    padding: 4px;
+}
+
+.invoice-meta strong {
+    display: inline-block;
+    width: 120px;
+}
+
+/* BILLING */
+.billing {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.billing td {
+    width: 50%;
+    vertical-align: top;
+    padding: 6px;
+}
+
+.billing h3 {
+    margin: 0 0 6px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #000;
+}
+
+/* STATUS */
+.status {
+    text-align: right;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* ITEMS TABLE */
+.items {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.items th {
+    border: 1px solid #000;
+    padding: 6px;
+    background: #f2f2f2;
+    font-size: 12px;
+    text-align: center;
+}
+
+.items td {
+    border: 1px solid #000;
+    padding: 6px;
+}
+
+.items td:nth-child(2),
+.items td:nth-child(3),
+.items td:nth-child(4) {
+    text-align: center;
+}
+
+/* TOTALS */
+.totals {
+    width: 40%;
+    float: right;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.totals td {
+    border: 1px solid #000;
+    padding: 6px;
+}
+
+.totals .label {
+    font-weight: bold;
+}
+
+.totals .grand {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* CLEAR FLOAT */
+.clear {
+    clear: both;
+}
+
+/* PAYMENT DETAILS */
+.payment-info {
+    margin-top: 20px;
+}
+
+.payment-info h3 {
+    font-size: 14px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #000;
+}
+
+.payment-info p {
+    margin: 4px 0;
+}
+
+/* NOTES */
+.notes {
+    margin-top: 20px;
+    font-size: 11px;
+}
+
+.notes h4 {
+    margin-bottom: 4px;
+}
+
+/* PAYMENTS TABLE */
+.payments {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.payments th,
+.payments td {
+    border: 1px solid #000;
+    padding: 6px;
+    text-align: center;
+}
+
+.payments th {
+    background: #f2f2f2;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 25px;
+    font-size: 11px;
+    border-top: 1px solid #000;
+    padding-top: 10px;
+    text-align: center;
+}
+
+/* PRINT OPTIMIZATION */
+@page {
+    margin: 20mm;
+}
+
+/* ================================
+   INVOICE FORM STYLES
+   ================================ */
+
+form {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px 25px;
+    border: 1px solid #000;
+    background: #fff;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h3 {
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #000;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #000;
+    font-size: 12px;
+    font-family: inherit;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid #000;
+    background: #f2f2f2;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e6e6e6;
+}
+
+/* GROUPING HELPERS */
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row>div {
+    flex: 1;
+}
+
+/* MOBILE SAFE */
+@media (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+/* ===== BASE ===== */
+body {
+    font-family: DejaVu Sans, Arial, sans-serif;
+    font-size: 12px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.clear {
+    clear: both;
+}
+
+/* ===== COLORS ===== */
+:root {
+    --brand-blue: #2ea3f2;
+    --light-blue: #eaf6ff;
+}
+
+/* ===== HEADER ===== */
+.invoice-header {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 40%;
+    float: left;
+}
+
+.logo img {
+    max-width: 160px;
+}
+
+.invoice-title {
+    width: 60%;
+    float: right;
+    text-align: right;
+}
+
+.invoice-title h1 {
+    margin: 0;
+    color: var(--brand-blue);
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.status.PAID {
+    background: #28a745;
+}
+
+.status.UNPAID {
+    background: #dc3545;
+}
+
+.status.PARTIALLY\ PAID {
+    background: #f0ad4e;
+}
+
+/* ===== META ===== */
+.invoice-meta {
+    margin-bottom: 15px;
+}
+
+.invoice-meta td {
+    padding: 5px 0;
+}
+
+/* ===== BILLING ===== */
+.billing td {
+    width: 50%;
+    vertical-align: top;
+    padding: 10px;
+    background: var(--light-blue);
+}
+
+.billing h3 {
+    margin-top: 0;
+    color: var(--brand-blue);
+}
+
+/* ===== ITEMS ===== */
+.items th {
+    background: var(--brand-blue);
+    color: #fff;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.items td {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.items td:nth-child(2),
+.items td:nth-child(3),
+.items td:nth-child(4) {
+    text-align: right;
+}
+
+/* ===== TOTALS ===== */
+.totals {
+    width: 40%;
+    float: right;
+    margin-top: 15px;
+}
+
+.totals td {
+    padding: 6px;
+    border: 1px solid #ccc;
+}
+
+.totals .grand {
+    background: var(--light-blue);
+    font-weight: bold;
+}
+
+/* ===== PAYMENTS ===== */
+.payments th {
+    background: var(--brand-blue);
+    color: #fff;
+    padding: 6px;
+}
+
+.payments td {
+    padding: 6px;
+    border: 1px solid #ccc;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    margin-top: 30px;
+    font-size: 11px;
+    text-align: center;
+    color: #555;
+}
