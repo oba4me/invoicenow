@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Create Invoice</title>
+    <title>Quick Invoice Now!</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
 <h3>Invoice Info</h3>
 <div class="form-row">
     <div>
-        <input type="text" name="invoice_no" value="INV#000546" placeholder="Invoice Number">
+        <input type="text" name="invoice_no" value="INV#0002026" placeholder="Invoice Number">
     </div>
     <div>
         <input type="date" name="invoice_date">
